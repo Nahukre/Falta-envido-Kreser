@@ -1120,6 +1120,7 @@
         }
         .nosotros {
             margin-top: 20px;
+            margin-bottom: 20px;
             width: 70%;
             margin-left: 15%;
             text-align: justify;
@@ -1332,6 +1333,7 @@
             font-family: sans-serif;
             padding: 5px;
             margin-left: 32%;
+            margin-top: 5%;
             &:hover {
                 background-color: $color-negro;
                 color: $color-rojo;
