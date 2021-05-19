@@ -1,0 +1,1386 @@
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    $color-rojo: #ff1934;
+    $color-negro: #211f1f;
+    @media only screen and (min-width: 320px) {
+        .encabezado {
+            /* esta clase corresponde al encabezado*/
+            background-color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            top: 0;
+            left: 0;
+            z-index: 1010;
+            display: flex;
+            width: 100%;
+            position: sticky;
+            z-index: 100;
+        }
+        .encabezado__logo {
+            width: 67px;
+            height: 55px;
+        }
+        .encabezado__nombre {
+            color: $color-negro;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Dela Gothic One', cursive;
+            margin-left: 10px;
+            padding-top: 5px;
+        }
+        .encabezado__escuelaDeTeatro {
+            color: $color-negro;
+            font-size: 10px;
+            text-transform: uppercase;
+            line-height: 0;
+            margin-left: 40px;
+            font-family: 'Dela Gothic One', cursive;
+            word-spacing: 5px;
+        }
+        .encabezado__nombre1 {
+            color: $color-negro;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Dela Gothic One', cursive;
+            margin-left: 7px;
+        }
+        .encabezado__escuelaDeTeatro1 {
+            color: $color-negro;
+            font-size: 11px;
+            text-transform: uppercase;
+            line-height: 0;
+            margin-left: 40px;
+            font-family: 'Dela Gothic One', cursive;
+            word-spacing: 10px;
+        }
+        .menu__items--font {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            padding-bottom: 2px;
+            background-color: $color-negro;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-right: 2px;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            li a:hover {
+                color: $color-rojo;
+            }
+        }
+        ul.menu__items--font li {
+            color: black;
+            position: relative;
+            margin-top: 2px;
+            margin-bottom: 0px;
+            margin-left: 3px;
+            font-size: 10px;
+            border: solid;
+            border-color: $color-negro;
+            padding: 2px;
+            border-radius: 5px;
+            background-color: $color-rojo;
+            &:hover {
+                background-color: $color-negro;
+                color: $color-rojo;
+                border-color: $color-rojo;
+                border-width: 2px;
+                border-radius: 5px;
+            }
+            ul li {
+                padding: 2px;
+                font-size: 10px;
+                text-align: center;
+                background-color: $color-rojo;
+                margin-left: -3px;
+            }
+        }
+        .pagina {
+            /* esta clase corresponde al index */
+            background-image: url(../img/imagen0.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            min-height: 550px;
+            color: white;
+            font-family: sans-serif;
+        }
+        .pagina1 {
+            /* esta clase corresponde a las paginas profesores e imagenes*/
+            background-color: $color-rojo;
+            color: white;
+            font-family: sans-serif;
+            padding: 5px;
+        }
+        .pagina2 {
+            /* esta clase corresponde a las paginas cursos y contacto*/
+            background-color: $color-negro;
+            color: white;
+            font-family: sans-serif;
+            padding: 5px;
+        }
+        .pagina3 {
+            /* esta clase corresponde a las paginas cursos y contacto*/
+            background-image: linear-gradient(to bottom, $color-negro, $color-rojo);
+            color: white;
+            font-family: sans-serif;
+            padding: 5px;
+        }
+        .titulo {
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 5px;
+            padding-top: 10px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        #titulo1 {
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+            width: 35%;
+            margin-top: 30px;
+        }
+        .escuela {
+            display: grid;
+            justify-content: center;
+            grid-auto-columns: 100%;
+        }
+        .objetivos__subtitulo1 {
+            font-size: 40px;
+            padding-bottom: 10px;
+            padding-top: 0px;
+            text-align: center;
+            margin-top: -5px;
+        }
+        .propuesta__subtitulo2 {
+            font-size: 40px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            text-align: center;
+            margin-top: -15px;
+        }
+        .nosotros {
+            margin-top: 0px;
+            width: 90%;
+            margin-left: 18px;
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 14px;
+        }
+        .equipo {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 100%;
+        }
+        .equipo__subtitulo3 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .subtitulo4 {
+            font-size: 30px;
+            padding-bottom: 0px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .equipo__fotoProfesor1 {
+            width: 300px;
+            height: 250px;
+            margin-top: 5px;
+            margin-left: 5px;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+        }
+        .equipo__fotoProfesor2 {
+            width: 300px;
+            height: 250px;
+            margin-top: 10px;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+        }
+        .quipo__profesoresCV {
+            margin-top: 20px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            margin-left: 5px;
+            text-align: justify;
+        }
+        .cursosDescripcion {
+            padding-top: 10px;
+            width: 90%;
+            margin-left: 17px;
+            font-size: 13px;
+            text-align: justify;
+        }
+        .menuCursos1 {
+            display: flex;
+            flex-direction: row;
+            margin-left: 5px;
+        }
+        .movile {
+            display: none;
+        }
+        .imgCursos {
+            display: flex;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            margin-left: 30px;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+        }
+        .cursosDescripcion {
+            padding-top: 30px;
+            width: 90%;
+            font-size: 14px;
+            text-align: justify;
+        }
+        .a98 {
+            background-image: url(../img/imagen5.jpg);
+            width: 95%;
+            height: 180px;
+            margin-left: 3%;
+            background-size: cover;
+            text-align: center;
+            color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        .a99 {
+            background-image: url(../img/imagen10.jpg);
+            width: 95%;
+            height: 180px;
+            margin-left: 3%;
+            background-size: cover;
+            text-align: center;
+            color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        .a100 {
+            background-image: url(../img/imagen4.jpg);
+            width: 95%;
+            height: 180px;
+            margin-left: 3%;
+            background-size: cover;
+            text-align: center;
+            color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        .carousel-indicators {
+            margin-left: 15%;
+        }
+        .carousel-control-prev {
+            width: 20%;
+            color: $color-negro;
+        }
+        .carousel-control-next {
+            width: 20%;
+            color: $color-negro;
+        }
+        .prefijo {
+            width: 40px;
+            text-align: right;
+        }
+        .telefono {
+            text-align: right;
+            width: 120px;
+        }
+        ul .subtituloCursos ul li {
+            display: inline-block;
+        }
+        .datosUl {
+            margin-left: -30px;
+        }
+        li {
+            position: relative;
+            display: inline-block;
+        }
+        ul li:hover ul {
+            display: block;
+            margin-top: 6px;
+            padding: 0px;
+        }
+        a {
+            /* esta etiqueta corresponde a los link dentro del menu*/
+            color: black;
+            text-decoration: none;
+        }
+        label {
+            font-size: 12px;
+            padding: 2px;
+        }
+        input {
+            font-size: 15px;
+            margin-bottom: 20px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+        fieldset {
+            margin-top: 30px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            padding-bottom: 0px;
+        }
+        select {
+            font-size: 12px;
+            border-radius: 5px;
+        }
+        textarea {
+            border-radius: 5px;
+            &:focus {
+                font-size: 16px;
+                border-radius: 5px;
+                transform: translate( 20px, 0px);
+                min-width: 210px;
+                min-height: 50px;
+            }
+        }
+        .consulta2 {
+            margin-top: 20px;
+        }
+        .botones {
+            font-family: sans-serif;
+            color: $color-negro;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 1px;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            line-height: 10px;
+        }
+        .formularioNovedades {
+            margin: 10px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .checkbox {
+            display: inline;
+            font-size: 12px;
+            margin-left: -17px;
+        }
+        .subtitulo {
+            font-size: 40px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .subtituloCursos {
+            font-size: 20px;
+            text-align: center;
+            margin-left: 0px;
+            padding-top: 15px;
+        }
+        .fotografias {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .fotografias__foto {
+            margin-top: 10px;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+            width: 150px;
+            height: 150px;
+            &:focus {
+                transform: scale(1.2);
+            }
+        }
+        .videos {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .videos__video1 {
+            width: 300px;
+            height: 300px;
+        }
+        a.inscripcion {
+            color: $color-negro;
+            background-color: $color-rojo;
+            border-color: $color-negro;
+            border: solid;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding: 5px;
+            margin-left: 18%;
+            margin-top: 10px;
+            &:hover {
+                background-color: $color-negro;
+                color: $color-rojo;
+            }
+        }
+        .pie {
+            /* esta clase corresponde a los pie de pagina*/
+            background-color: $color-rojo;
+            font-family: sans-serif;
+            border-top: solid;
+            border-color: $color-negro;
+            border-width: 10px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .pie__redes {
+            /* esta clase corresponde a los logos de las redes*/
+            width: 30px;
+            height: 30px;
+        }
+        .pie__datos {
+            color: $color-negro;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-top: 5px;
+            text-align: center;
+            li {
+                border-right: solid;
+                border-left: solid;
+                border-color: $color-negro;
+                border-width: 2px;
+                padding: 2px;
+            }
+        }
+        ul {
+            list-style: none;
+            margin-bottom: -5px;
+            ul {
+                position: absolute;
+                display: none;
+                li {
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .encabezado {
+            /* esta clase corresponde al encabezado*/
+            background-color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            top: 0;
+            left: 0;
+            z-index: 1010;
+            display: flex;
+            width: 100%;
+            position: sticky;
+            z-index: 100;
+        }
+        .encabezado__logo {
+            width: 67px;
+            height: 55px;
+        }
+        .encabezado__nombre {
+            color: $color-negro;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Dela Gothic One', cursive;
+            margin-left: 10px;
+            margin-top: -6px;
+        }
+        .encabezado__escuelaDeTeatro {
+            color: $color-negro;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-left: 35px;
+            font-family: 'Dela Gothic One', cursive;
+            word-spacing: 5px;
+        }
+        .encabezado__nombre1 {
+            color: $color-negro;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Dela Gothic One', cursive;
+            margin-left: 7px;
+        }
+        .encabezado__escuelaDeTeatro1 {
+            color: $color-negro;
+            font-size: 15px;
+            text-transform: uppercase;
+            line-height: 0;
+            margin-left: 35px;
+            font-family: 'Dela Gothic One', cursive;
+            word-spacing: 10px;
+        }
+        .menu__items--font {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            padding-bottom: 2px;
+            background-color: $color-negro;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-right: 17px;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            li a:hover {
+                color: $color-rojo;
+            }
+        }
+        ul.menu__items--font li {
+            color: black;
+            position: relative;
+            margin-top: 2px;
+            margin-bottom: 0px;
+            margin-left: 3px;
+            font-size: 12px;
+            border: solid;
+            border-color: $color-negro;
+            padding: 2px;
+            border-radius: 5px;
+            background-color: $color-rojo;
+            &:hover {
+                background-color: $color-negro;
+                color: $color-rojo;
+                border-color: $color-rojo;
+                border-width: 2px;
+                border-radius: 5px;
+            }
+            ul li {
+                padding: 2px;
+                font-size: 10px;
+                text-align: center;
+                background-color: $color-rojo;
+                margin-left: -3px;
+            }
+        }
+        .pagina {
+            /* esta clase corresponde al index */
+            background-image: url(../img/imagen0.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            min-height: 390px;
+            color: white;
+            font-family: sans-serif;
+        }
+        .pagina1 {
+            /* esta clase corresponde a las paginas profesores e imagenes*/
+            background-color: $color-rojo;
+            color: white;
+            font-family: sans-serif;
+            padding: 5px;
+        }
+        .pagina2 {
+            /* esta clase corresponde a las paginas cursos y contacto*/
+            background-color: $color-negro;
+            color: white;
+            font-family: sans-serif;
+            padding: 5px;
+        }
+        .pagina3 {
+            /* esta clase corresponde a las paginas cursos y contacto*/
+            background-image: linear-gradient(to bottom, $color-negro, $color-rojo);
+            color: white;
+            font-family: sans-serif;
+            padding: 5px;
+        }
+        .titulo {
+            width: 100%;
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 5px;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        #titulo1 {
+            width: 33%;
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        #titulo2 {
+            margin-left: -2px;
+        }
+        .escuela {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .objetivos__subtitulo1 {
+            font-size: 40px;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .propuesta__subtitulo2 {
+            font-size: 40px;
+            padding-bottom: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .nosotros {
+            margin-top: 5px;
+            width: 90%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 16px;
+        }
+        .equipo {
+            display: grid;
+            width: 100%;
+            grid-template-rows: 40% 40%;
+            grid-template-columns: 49% 49%;
+        }
+        .equipo__subtitulo3 {
+            font-size: 30px;
+            text-align: center;
+        }
+        .subtitulo4 {
+            font-size: 40px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: left;
+            margin-left: 20px;
+        }
+        .equipo__fotoProfesor1 {
+            width: 300px;
+            height: 250px;
+            margin-left: 40px;
+            margin-top: 20px;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+        }
+        .equipo__fotoProfesor2 {
+            width: 300px;
+            height: 250px;
+            margin-top: 20px;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+        }
+        .equipo__profesoresCV {
+            margin-left: 20px;
+            margin-top: 20px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        .cursosDescripcion {
+            padding-top: 30px;
+            width: 90%;
+            font-size: 14px;
+            text-align: justify;
+            margin-left: 40px;
+        }
+        .a98 {
+            background-image: url(../img/imagen15.jpg);
+            width: 60%;
+            height: 300px;
+            margin-left: 20%;
+            background-size: cover;
+            text-align: center;
+            color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        .a99 {
+            background-image: url(../img/imagen16.jpg);
+            width: 60%;
+            height: 300px;
+            margin-left: 20%;
+            background-size: cover;
+            text-align: center;
+            color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        .a100 {
+            background-image: url(../img/imagen17.jpg);
+            width: 60%;
+            height: 300px;
+            margin-left: 20%;
+            background-size: cover;
+            text-align: center;
+            color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        .carousel-indicators {
+            margin-left: 15%;
+        }
+        .carousel-control-prev {
+            width: 45%;
+            color: $color-negro;
+        }
+        .carousel-control-next {
+            width: 45%;
+            color: $color-negro;
+        }
+        .prefijo {
+            width: 40px;
+            text-align: right;
+        }
+        .telefono {
+            text-align: right;
+            width: 120px;
+        }
+        ul .subtituloCursos ul li {
+            display: inline-block;
+        }
+        li {
+            position: relative;
+            display: inline-block;
+        }
+        ul li:hover ul {
+            display: block;
+            margin-top: 6px;
+            padding: 0px;
+        }
+        ol {
+            list-style: none;
+        }
+        a {
+            /* esta etiqueta corresponde a los link dentro del menu*/
+            color: black;
+            text-decoration: none;
+        }
+        label {
+            margin: 10px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        input {
+            font-size: 15px;
+            margin-bottom: 20px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+        fieldset {
+            margin-top: 30px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        select {
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        textarea {
+            border-radius: 5px;
+            &:focus {
+                font-size: 16px;
+                border-radius: 5px;
+                transform: translate( 100px, 0px);
+                min-width: 400px;
+                min-height: 100px;
+            }
+        }
+        .consulta2 {
+            margin-top: 20px;
+        }
+        .botones {
+            font-family: sans-serif;
+            color: $color-negro;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .formulario {
+            line-height: 20px;
+        }
+        .formularioNovedades {
+            margin: 10px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .checkbox {
+            display: inline;
+            margin-bottom: 10px;
+            font-size: 20px;
+            margin-left: 0px;
+        }
+        .subtitulo {
+            font-size: 40px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .subtituloCursos {
+            font-size: 35px;
+            width: 250px;
+            text-align: center;
+            margin-left: 10px;
+            padding-top: 15px;
+        }
+        .fotografias {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .fotografias__foto {
+            margin-top: 0px;
+            margin-bottom: 15px;
+            width: 215px;
+            height: 215px;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .videos {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .videos__video1 {
+            width: 300px;
+            height: 300px;
+            margin-left: 20px;
+        }
+        a.inscripcion {
+            color: $color-negro;
+            background-color: $color-rojo;
+            border-color: $color-negro;
+            border: solid;
+            border-radius: 5px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding: 5px;
+            margin-left: 26%;
+            margin-top: 0px;
+            &:hover {
+                background-color: $color-negro;
+                color: $color-rojo;
+            }
+        }
+        .pie {
+            /* esta clase corresponde a los pie de pagina*/
+            background-color: $color-rojo;
+            font-family: sans-serif;
+            border-top: solid;
+            border-color: $color-negro;
+            border-width: 10px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .pie__redes {
+            /* esta clase corresponde a los logos de las redes*/
+            width: 30px;
+            height: 30px;
+        }
+        .pie__datos {
+            color: $color-negro;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-top: 5px;
+            text-align: center;
+            li {
+                border-right: solid;
+                border-left: solid;
+                border-color: $color-negro;
+                border-width: 2px;
+                padding: 2px;
+            }
+        }
+        ul {
+            list-style: none;
+            ul {
+                position: absolute;
+                display: none;
+                li {
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 1024px) {
+        .encabezado {
+            /* esta clase corresponde al encabezado*/
+            background-color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            top: 0;
+            left: 0;
+            z-index: 1010;
+            display: flex;
+            width: 100%;
+            position: sticky;
+            z-index: 100;
+        }
+        .encabezado__logo {
+            width: 90px;
+            height: 80px;
+        }
+        .encabezado__nombre {
+            color: $color-negro;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Dela Gothic One', cursive;
+            margin-left: 10px;
+        }
+        .encabezado__escuelaDeTeatro {
+            color: $color-negro;
+            font-size: 20px;
+            text-transform: uppercase;
+            line-height: 0;
+            margin-left: 50px;
+            font-family: 'Dela Gothic One', cursive;
+            word-spacing: 10px;
+        }
+        .encabezado__nombre1 {
+            color: $color-negro;
+            font-size: 43px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Dela Gothic One', cursive;
+            margin-left: 10px;
+        }
+        .encabezado__escuelaDeTeatro1 {
+            color: $color-negro;
+            font-size: 22px;
+            text-transform: uppercase;
+            line-height: 0;
+            margin-left: 47px;
+            font-family: 'Dela Gothic One', cursive;
+            word-spacing: 10px;
+        }
+        .menu__items--font {
+            display: flex;
+            flex-flow: row nowrap;
+            padding-bottom: 2px;
+            background-color: $color-negro;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-right: 15px;
+            width: 100%;
+            text-align: right;
+            border-bottom: solid;
+            border-color: $color-negro;
+            border-width: 0px;
+            li a:hover {
+                color: $color-rojo;
+            }
+        }
+        ul.menu__items--font li {
+            color: black;
+            position: relative;
+            margin-top: 2px;
+            margin-bottom: 0px;
+            margin-left: 5px;
+            font-size: 16px;
+            border: solid;
+            border-color: $color-negro;
+            padding: 1px;
+            border-radius: 5px;
+            background-color: $color-rojo;
+            &:hover {
+                background-color: $color-negro;
+                color: $color-rojo;
+                border-color: $color-rojo;
+                border-width: 2px;
+                border-radius: 5px;
+            }
+            ul li {
+                padding: 2px;
+                font-size: 14px;
+                text-align: center;
+                background-color: $color-rojo;
+                margin-left: -5px;
+            }
+        }
+        .pagina {
+            /* esta clase corresponde al index */
+            background-image: url(../img/imagen0.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            min-height: 593px;
+            color: white;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        .pagina1 {
+            /* esta clase corresponde a las paginas profesores e imagenes*/
+            background-color: $color-rojo;
+            color: white;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        .pagina2 {
+            /* esta clase corresponde a las paginas cursos y contacto*/
+            background-color: $color-negro;
+            color: white;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        .pagina3 {
+            /* esta clase corresponde a las paginas cursos y contacto*/
+            background-image: $color-negro;
+            color: white;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+        .titulo {
+            margin-top: 40px;
+            font-size: 60px;
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+            padding-top: 20px;
+            width: 100%;
+        }
+        #titulo1 {
+            text-transform: uppercase;
+            margin-top: 40px;
+            font-size: 60px;
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+            width: 25%
+        }
+        .escuela {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .objetivos__subtitulo1 {
+            font-size: 40px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .propuesta__subtitulo2 {
+            font-size: 40px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .equipo {
+            display: grid;
+            width: 100%;
+            grid-template-rows: 40% 40%;
+            grid-template-columns: 50% 50%;
+        }
+        .equipo__subtitulo3 {
+            font-size: 40px;
+            text-align: center;
+        }
+        .subtitulo4 {
+            font-size: 40px;
+            padding-bottom: 10px;
+            padding-top: 0px;
+            margin-left: 20px;
+        }
+        .nosotros {
+            margin-top: 20px;
+            width: 70%;
+            margin-left: 15%;
+            text-align: justify;
+            font-size: 20px;
+        }
+        .equipo__fotoProfesor1 {
+            width: 350px;
+            height: 250px;
+            margin-left: 180px;
+            margin-top: 20px;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+        }
+        .equipo__fotoProfesor2 {
+            width: 350px;
+            height: 250px;
+            margin-top: 20px;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+        }
+        .equipo__profesoresCV {
+            margin-left: 150px;
+            margin-top: 20px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            width: 60%;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .cursosDescripcion {
+            padding-top: 30px;
+            width: 90%;
+            margin-left: 65px;
+            font-size: 16px;
+            text-align: justify;
+        }
+        .a98 {
+            background-image: url(../img/imagen5.jpg);
+            width: 60%;
+            height: 500px;
+            margin-left: 297px;
+            background-size: cover;
+            text-align: center;
+            color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 40px;
+            padding-top: 10px;
+        }
+        .a99 {
+            background-image: url(../img/imagen10.jpg);
+            width: 60%;
+            height: 500px;
+            margin-left: 300px;
+            background-size: cover;
+            text-align: center;
+            color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 40px;
+            padding-top: 10px;
+        }
+        .a100 {
+            background-image: url(../img/imagen4.jpg);
+            width: 60%;
+            height: 500px;
+            margin-left: 300px;
+            background-size: cover;
+            text-align: center;
+            color: $color-rojo;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 40px;
+            padding-top: 10px;
+        }
+        .carousel-indicators {
+            margin-left: 15%;
+        }
+        .carousel-control-prev {
+            width: 45%;
+            color: $color-negro;
+        }
+        .carousel-control-next {
+            width: 45%;
+            color: $color-negro;
+        }
+        .prefijo {
+            width: 40px;
+            text-align: right;
+        }
+        .telefono {
+            text-align: right;
+            width: 120px;
+        }
+        li {
+            position: relative;
+            display: inline-block;
+        }
+        a {
+            /* esta etiqueta corresponde a los link dentro del menu*/
+            color: black;
+            text-decoration: none;
+        }
+        label {
+            margin: 10px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        input {
+            font-size: 15px;
+            margin-bottom: 20px;
+            margin-right: 5px;
+        }
+        fieldset {
+            margin-top: 50px;
+            margin-bottom: 52px;
+            border-radius: 5px;
+        }
+        select {
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        textarea {
+            border-radius: 5px;
+            &:focus {
+                font-size: 16px;
+                border-radius: 5px;
+                transform: translate( 400px, 0px);
+                min-width: 400px;
+                min-height: 200px;
+            }
+        }
+        .formulario {
+            padding-bottom: 10px;
+            line-height: 20px;
+        }
+        .formularioNovedades {
+            margin: 10px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .checkbox {
+            display: inline;
+            font-size: 20px;
+            margin-left: 0px;
+        }
+        .consulta2 {
+            margin-top: 20px;
+        }
+        .botones {
+            font-family: sans-serif;
+            color: $color-negro;
+            border: solid;
+            border-color: $color-negro;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .subtitulo {
+            font-size: 40px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .subtituloCursos {
+            font-size: 35px;
+            width: 250px;
+            text-align: center;
+            margin-left: 150px;
+            padding-top: 15px;
+        }
+        .fotografias {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .fotografias__foto {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            width: 250px;
+            height: 250px;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .videos {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .videos__video1 {
+            width: 300px;
+            height: 300px;
+            margin-left: 20px;
+        }
+        .edades1 {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-left: 90px;
+        }
+        a.inscripcion {
+            color: $color-negro;
+            background-color: $color-rojo;
+            border-color: $color-negro;
+            border: solid;
+            border-radius: 5px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding: 5px;
+            margin-left: 32%;
+            &:hover {
+                background-color: $color-negro;
+                color: $color-rojo;
+            }
+        }
+        .pie {
+            /* esta clase corresponde a los pie de pagina*/
+            background-color: $color-rojo;
+            font-family: sans-serif;
+            border-top: solid;
+            border-color: $color-negro;
+            border-width: 10px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+        .pie__redes {
+            /* esta clase corresponde a los logos de las redes*/
+            width: 30px;
+            height: 30px;
+        }
+        .pie__datos {
+            color: $color-negro;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-align: center;
+            li {
+                border-right: solid;
+                border-left: solid;
+                border-color: $color-negro;
+                border-width: 2px;
+                padding: 2px;
+            }
+        }
+        ul {
+            list-style: none;
+            margin-bottom: -5px;
+            ul {
+                position: absolute;
+                display: none;
+                li {
+                    display: block;
+                }
+            }
+            li:hover ul {
+                display: block;
+                margin-top: 4px;
+            }
+        }
+    }
