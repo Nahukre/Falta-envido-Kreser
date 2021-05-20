@@ -227,12 +227,12 @@
     border-color: #211f1f;
     border-radius: 5px;
   }
-  .quipo__profesoresCV {
-    margin-top: 20px;
+  .equipo__profesoresCV {
+    margin-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     margin-left: 5px;
-    text-align: justify;
+    text-align: center;
   }
   .cursosDescripcion {
     padding-top: 10px;
@@ -754,6 +754,7 @@
     margin-top: 20px;
     padding-right: 10px;
     padding-bottom: 10px;
+    text-align: center;
   }
   .cursosDescripcion {
     padding-top: 30px;
@@ -1237,6 +1238,7 @@
     width: 60%;
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
   }
   .cursosDescripcion {
     padding-top: 30px;
