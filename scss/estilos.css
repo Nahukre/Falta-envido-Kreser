@@ -1352,6 +1352,9 @@
     font-size: 20px;
     padding: 10px;
   }
+  .motivo {
+    margin-top: 20px;
+  }
   input {
     font-size: 15px;
     margin-bottom: 20px;
