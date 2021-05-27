@@ -1055,8 +1055,10 @@
     z-index: 100;
   }
   .encabezado__logo {
-    width: 90px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding-bottom: 7px;
   }
   .encabezado__nombre {
     color: #211f1f;
@@ -1065,6 +1067,7 @@
     font-weight: bold;
     font-family: 'Dela Gothic One', cursive;
     margin-left: 10px;
+    margin-top: 5px;
   }
   .encabezado__escuelaDeTeatro {
     color: #211f1f;
@@ -1082,6 +1085,7 @@
     font-weight: bold;
     font-family: 'Dela Gothic One', cursive;
     margin-left: 10px;
+    margin-top: 8px;
   }
   .encabezado__escuelaDeTeatro1 {
     color: #211f1f;
