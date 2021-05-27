@@ -1076,7 +1076,7 @@
                                                     background-size: cover;
                                                     background-position: center;
                                                     width: 100%;
-                                                    min-height: 558px;
+                                                    min-height: 480px;
                                                     color: white;
                                                     font-family: sans-serif;
                                                     padding: 10px;
@@ -1103,11 +1103,11 @@
                                                     padding: 10px;
                                                 }
                                                 .titulo {
-                                                    margin-top: 40px;
+                                                    margin-top: 10px;
                                                     font-size: 60px;
                                                     text-align: center;
                                                     font-family: sans-serif;
-                                                    margin-bottom: 8px;
+                                                    margin-bottom: 20px;
                                                     padding-top: 20px;
                                                     width: 100%;
                                                 }
@@ -1128,14 +1128,14 @@
                                                     padding-bottom: 10px;
                                                     padding-top: 10px;
                                                     text-align: center;
-                                                    margin-top: 20px;
+                                                    margin-top: 8px;
                                                 }
                                                 .propuesta__subtitulo2 {
                                                     font-size: 40px;
                                                     padding-bottom: 10px;
                                                     padding-top: 10px;
                                                     text-align: center;
-                                                    margin-top: 20px;
+                                                    margin-top: 8px;
                                                 }
                                                 .equipo {
                                                     display: grid;
@@ -1145,6 +1145,7 @@
                                                 }
                                                 .equipo__subtitulo3 {
                                                     font-size: 40px;
+                                                    margin-top: 15px;
                                                 }
                                                 .subtitulo4 {
                                                     font-size: 40px;
@@ -1180,7 +1181,7 @@
                                                 }
                                                 .equipo__profesoresCV {
                                                     margin-left: 20%;
-                                                    margin-top: 20px;
+                                                    margin-top: 15px;
                                                     padding-right: 10px;
                                                     padding-bottom: 10px;
                                                     width: 60%;
@@ -1272,8 +1273,8 @@
                                                     margin-right: 5px;
                                                 }
                                                 fieldset {
-                                                    margin-top: 49px;
-                                                    margin-bottom: 49px;
+                                                    margin-top: 33px;
+                                                    margin-bottom: 35px;
                                                     border-radius: 5px;
                                                 }
                                                 select {
