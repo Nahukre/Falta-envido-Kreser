@@ -102,7 +102,7 @@
     border-radius: 5px;
     background-color: #ff1934;
   }
-  ul.menu__items--font li:hover {
+  ul.menu__items--font li:focus {
     background-color: #211f1f;
     color: #ff1934;
     border-color: #ff1934;

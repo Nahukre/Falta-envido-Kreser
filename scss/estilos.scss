@@ -92,7 +92,7 @@
                                                     padding: 2px;
                                                     border-radius: 5px;
                                                     background-color: $color-rojo;
-                                                    &:hover {
+                                                    &:focus {
                                                         background-color: $color-negro;
                                                         color: $color-rojo;
                                                         border-color: $color-rojo;
