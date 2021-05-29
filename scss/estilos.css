@@ -381,7 +381,7 @@
     font-weight: bold;
   }
   .carousel-indicators {
-    margin-left: 10%;
+    margin: auto;
   }
   .carousel-control-prev {
     width: 8%;
@@ -948,12 +948,12 @@
     font-size: 14px;
     font-weight: bold;
   }
+  .carousel-indicators {
+    margin: auto;
+  }
   .carousel-control-prev {
     width: 15%;
     color: #211f1f;
-  }
-  .carousel-indicators {
-    text-align: center;
   }
   .carousel-control-next {
     width: 15%;
@@ -1517,7 +1517,7 @@
     font-weight: bold;
   }
   .carousel-indicators {
-    text-align: center;
+    margin: auto;
   }
   .carousel-control-prev {
     width: 45%;
