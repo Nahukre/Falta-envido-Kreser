@@ -1364,7 +1364,7 @@
     font-size: 40px;
     padding-bottom: 10px;
     padding-top: 0px;
-    margin-left: 20px;
+    margin-left: 45px;
   }
   .nosotros {
     margin-top: 10px;
@@ -1432,7 +1432,7 @@
     border: solid;
     border-width: 3px;
     border-color: #211f1f;
-    background-image: url(../img/imagen1.jpg);
+    background-image: url(../img/imagen21.jpg);
     background-position: 100% 100%;
     width: 60%;
     height: 500px;
@@ -1641,6 +1641,7 @@
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
     margin: auto;
+    z-index: 10;
   }
   .videos {
     display: -webkit-box;
