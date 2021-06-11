@@ -23,6 +23,7 @@
     <!--este es el link donde agrego los estilos-->
     <link rel="shortcut icon" href="../img/favicon.png">
     <script src="../wow/wow.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../animate.css">
 </head>
 </head>
@@ -63,25 +64,31 @@
             <h2 class="titulo">Galería</h2>
             <!--este es el titulo de la pagina-->
         </div>
-        <h3 class="subtitulo4">Fotografías</h3>
-        <!--este es el subtitulo de la pagina-->
-        <div class="fotografias">
-            <img class="fotografias__foto" src="../img/imagen1.jpg" alt="foto de actores bailando">
-            <img class="fotografias__foto" src="../img/imagen3.jpg" alt="foto de actores bailando">
-            <img class="fotografias__foto" src="../img/imagen2.jpg" alt="foto de actores leyendo un libreto">
-            <img class="fotografias__foto" src="../img/imagen4.jpg" alt="foto de actores leyendo un libreto">
-            <img class="fotografias__foto" src="../img/imagen20.jpg" alt="foto de actores ensayando">
-            <img class="fotografias__foto" src="../img/imagen6.jpg" alt="foto de actores preparando un ensayo">
-            <img class="fotografias__foto" src="../img/imagen7.jpg" alt="foto de actores filmando">
-            <img class="fotografias__foto" src="../img/imagen8.jpg" alt="foto de actores ensayando">
-            <img class="fotografias__foto" src="../img/imagen9.jpg" alt="foto de sala de teatro">
-            <img class="fotografias__foto" src="../img/imagen10.jpg" alt="foto de profesora en las butacas del teatro">
+        <div class="galeria__fondo">
+            <h3 class="subtitulo4">Fotografías</h3>
+            <!--este es el subtitulo de la pagina-->
+            <div class="fotografias">
+                <img class="fotografias__foto" src="../img/imagen1.jpg" alt="foto de actores bailando">
+                <img class="fotografias__foto" src="../img/imagen3.jpg" alt="foto de actores bailando">
+                <img class="fotografias__foto" src="../img/imagen2.jpg" alt="foto de actores leyendo un libreto">
+                <img class="fotografias__foto" src="../img/imagen4.jpg" alt="foto de actores leyendo un libreto">
+                <img class="fotografias__foto" src="../img/imagen20.jpg" alt="foto de actores ensayando">
+                <img class="fotografias__foto" src="../img/imagen6.jpg" alt="foto de actores preparando un ensayo">
+                <img class="fotografias__foto" src="../img/imagen7.jpg" alt="foto de actores filmando">
+                <img class="fotografias__foto" src="../img/imagen8.jpg" alt="foto de actores ensayando">
+                <img class="fotografias__foto" src="../img/imagen9.jpg" alt="foto de sala de teatro">
+                <img class="fotografias__foto" src="../img/imagen10.jpg" alt="foto de profesora en las butacas del teatro">
+            </div>
+            <h3 class="subtitulo4">Videos</h3>
+            <!--este es el subtitulo de la pagina-->
+            <div class="videos">
+                <video class="videos__video1" src="../img/video1.mp4" controls></video>
+                <video class="videos__video1" src="../img/video2.mp4" controls></video>
+            </div>
         </div>
-        <h3 class="subtitulo4">Videos</h3>
-        <!--este es el subtitulo de la pagina-->
-        <div class="videos">
-            <video class="videos__video1" src="../img/video1.mp4" controls></video>
-            <video class="videos__video1" src="../img/video2.mp4" controls></video>
+        <!--Boton de ir hacia arriba-->
+        <div id="button-up">
+            <i class="fas fa-chevron-up" id="flecha"></i>
         </div>
     </section>
     <footer class="pie">
@@ -104,6 +111,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src="../js/boton-arriba.js"></script>
 </body>
 
 </html>

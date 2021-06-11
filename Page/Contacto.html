@@ -59,31 +59,32 @@
         </ul>
     </nav>
     <section>
-        <form class="pagina1">
+        <form class="pagina1" action="enviar.php" method="POST">
             <!--este es el formulario de contacto-->
+            <h2 class="wow fadeInDown" data-wow-delay="1s" id="titulo1">Contacto</h2>
             <fieldset>
-                <legend class="wow fadeInDown" data-wow-delay="1s" id="titulo1">Contacto</legend>
+
                 <!--este es el titulo de la pagina-->
                 <div class="formulario">
                     <p>
                         <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre">
+                        <input type="text" name="nombre" required>
                     </p>
                     <p>
                         <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido">
+                        <input type="text" name="apellido" required>
                     </p>
                     <p>
                         <label for="Celular">Celular:</label>
-                        <input type="tel" class="prefijo" placeholder="11" /><input type="tel" class="telefono" placeholder="55562439" />
+                        <input type="tel" class="prefijo" name="prefijo" placeholder="11" required /><input type="tel" class="telefono" name="telefono" placeholder="55562439" required />
                     </p>
                     <p>
                         <label for="email">Email:</label>
-                        <input type="email" name="Email" placeholder="nombre@ejemplo.com">
+                        <input type="email" name="email" placeholder="nombre@ejemplo.com" required>
                     </p>
                     <p>
                         <label class="nacimiento">Fecha de nacimiento:</label>
-                        <select name="Día">
+                        <select name="dia" required>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -116,7 +117,7 @@
                             <option value="30">30</option>
                             <option value="31">31</option>
                             </select>
-                        <select name="Mes">
+                        <select name="mes" required>
                                 <option value="enero">enero</option>
                                 <option value="febrero">febrero</option>
                                 <option value="marzo">marzo</option>
@@ -130,7 +131,7 @@
                                 <option value="noviembre">noviembre</option>
                                 <option value="diciembre">diciembre</option>
                         </select>
-                        <select name="año">
+                        <select name="año" required>
                                 <option value="2016">2016</option>
                                 <option value="2015">2015</option>
                                 <option value="2014">2014</option>
@@ -229,10 +230,10 @@
                     </p>
                     <p class="motivo">
                         <label>Motivo de consulta:</label>
-                        <select name="motivo">
-                            <option value="Informes">Informes</option>
-                            <option value="Inscripcion">Inscripción</option>
-                            <option value="Otras consultas">Otras consultas</option>
+                        <select name="motivo de consulta">
+                            <option name="Informes" value="Informes">Informes</option>
+                            <option name="Inscripciones" value="Inscripcion">Inscripción</option>
+                            <option name="Otras consultas" value="Otras consultas">Otras consultas</option>
                             </select>
                     </p>
                     <p>
@@ -241,7 +242,7 @@
                     </p>
                     <p>
                         <div class="formularioNovedades">
-                            <div class="checkbox">Desea recibir novedades</div> <input type="checkbox">
+                            <div class="checkbox">Desea recibir novedades</div> <input name="checkbox" type="checkbox">
                     </p>
                     <p>
                         <input type="submit" value="enviar formulario" class="botones">
